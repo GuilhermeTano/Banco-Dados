@@ -1,0 +1,82 @@
+unit uFrmCadastrar;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TFrmCadastrar = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    EditNome: TEdit;
+    EditEmail: TEdit;
+    EditCriarSenha: TEdit;
+    EditEmailConfirmacao: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    EditConfirmacaoSenha: TEdit;
+    Label5: TLabel;
+    DateTimePicker1: TDateTimePicker;
+    Label6: TLabel;
+    EditUsuario: TEdit;
+    Label7: TLabel;
+    Panel3: TPanel;
+    BtCancelar: TPanel;
+    procedure Panel3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmCadastrar: TFrmCadastrar;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmCadastrar.Panel3Click(Sender: TObject);
+begin
+  if (EditNome.Text = '') or (EditEmail.Text = '') or
+  (EditEmailConfirmacao.Text = '') or (EditUsuario.Text = '') or
+  (EditCriarSenha.Text = '') or  (EditConfirmacaoSenha.Text = '') then
+    begin
+      MessageDlg (' Você não digitou nenhum conteúdo', mtInformation, [mbOK], 0);
+    end
+  else
+  if Length (EditCriarSenha.Text) < 6 then
+     begin
+       MessageDlg ('Sua senha deverá ter no mínimo 06 caractéres!', mtInformation, [mbOK], 0);
+     end
+   else
+   if (EditConfirmacaoSenha.Text) <> EditCriarSenha.Text then
+     begin
+       MessageDlg ('Suas senhas deverão ser iguais', mtinformation, [mbOK], 0);
+     end
+   else
+   if (EditCriarSenha.Text) = EditConfirmacaoSenha.Text then
+     begin
+      MessageDlg ('Cadastro Realizado com Sucesso!', TMsgDlgType.mtConfirmation, [mbOK], 0);
+     end
+   else
+   if (EditEmailConfirmacao.Text) <> EditEmail.Text then
+      begin
+        MessageDlg ('O seu endereço de email está incorreto', mtInformation, [mbOK], 0);
+      end
+    else
+    if (EditEmail.Text) = EditEmailConfirmacao.Text then
+      begin
+        MessageDlg ('Cadastro Realizado com Sucesso!', TMsgDlgType.mtConfirmation, [mbOK], 0);
+      end;
+
+
+
+
+end;
+
+end.

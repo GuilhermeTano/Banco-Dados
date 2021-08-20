@@ -1,0 +1,16 @@
+program Banco_dado;
+
+uses
+  Vcl.Forms,
+  uFrmPrincipal in 'uFrmPrincipal.pas' {FrmPrincipal},
+  uFrmAcessado in 'uFrmAcessado.pas' {FrmAcessado};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+  Application.CreateForm(TFrmAcessado, FrmAcessado);
+  Application.Run;
+end.

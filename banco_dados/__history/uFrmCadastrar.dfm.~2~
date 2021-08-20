@@ -1,0 +1,214 @@
+object FrmCadastrar: TFrmCadastrar
+  Left = 0
+  Top = 0
+  Caption = 'Cadastro de Usu'#225'rio'
+  ClientHeight = 380
+  ClientWidth = 592
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 592
+    Height = 380
+    Align = alClient
+    Color = clWindow
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitLeft = 248
+    ExplicitTop = 192
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object Label1: TLabel
+      Left = 56
+      Top = 101
+      Width = 79
+      Height = 16
+      Caption = 'Nome Completo'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Franklin Gothic Medium'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 56
+      Top = 221
+      Width = 80
+      Height = 16
+      Caption = 'Digite seu Email'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Franklin Gothic Medium'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 56
+      Top = 289
+      Width = 108
+      Height = 16
+      Caption = 'Confirma'#231#227'o do Email'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Franklin Gothic Medium'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label4: TLabel
+      Left = 352
+      Top = 157
+      Width = 76
+      Height = 16
+      Caption = 'Crie uma senha'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Franklin Gothic Medium'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label5: TLabel
+      Left = 352
+      Top = 221
+      Width = 97
+      Height = 16
+      Caption = 'Confirme sua senha'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Franklin Gothic Medium'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label6: TLabel
+      Left = 56
+      Top = 157
+      Width = 101
+      Height = 16
+      Caption = 'Data de Nascimento'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Franklin Gothic Medium'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label7: TLabel
+      Left = 352
+      Top = 101
+      Width = 84
+      Height = 16
+      Caption = 'Nome de Usu'#225'rio'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Franklin Gothic Medium'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Panel2: TPanel
+      Left = 1
+      Top = 1
+      Width = 590
+      Height = 41
+      Align = alTop
+      Caption = 'Cadastro de usu'#225'rio'
+      Color = clMenuHighlight
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -16
+      Font.Name = 'Franklin Gothic Medium'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 0
+      ExplicitLeft = 280
+      ExplicitTop = 136
+      ExplicitWidth = 185
+    end
+    object Edit1: TEdit
+      Left = 56
+      Top = 120
+      Width = 180
+      Height = 21
+      TabOrder = 1
+      TextHint = 'Ex: Marcos Aurelio Rodrigues'
+    end
+    object Edit2: TEdit
+      Left = 56
+      Top = 240
+      Width = 180
+      Height = 21
+      TabOrder = 2
+      TextHint = 'Ex: Microsoft@hotmail.com'
+    end
+    object Edit3: TEdit
+      Left = 352
+      Top = 176
+      Width = 180
+      Height = 21
+      TabOrder = 3
+      TextHint = 'Digite uma senha de 6 caract'#233'res'
+    end
+    object Edit4: TEdit
+      Left = 56
+      Top = 308
+      Width = 180
+      Height = 21
+      TabOrder = 4
+      TextHint = 'Digite novamente seu Email'
+    end
+    object Edit5: TEdit
+      Left = 352
+      Top = 240
+      Width = 180
+      Height = 21
+      TabOrder = 5
+      TextHint = 'Digite novamente sua Senha'
+    end
+    object DateTimePicker1: TDateTimePicker
+      Left = 56
+      Top = 176
+      Width = 180
+      Height = 21
+      Date = 44420.000000000000000000
+      Time = 0.719553194445325100
+      TabOrder = 6
+    end
+    object Edit7: TEdit
+      Left = 352
+      Top = 120
+      Width = 180
+      Height = 21
+      TabOrder = 7
+      TextHint = 'Ex: Marcos_Aurelio'
+    end
+    object Panel3: TPanel
+      Left = 387
+      Top = 297
+      Width = 110
+      Height = 41
+      Caption = 'Cadastrar'
+      Color = clMenuHighlight
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Franklin Gothic Medium'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 8
+    end
+  end
+end

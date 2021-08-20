@@ -1,0 +1,54 @@
+unit uFrmAcessado;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TFrmAcessado = class(TForm)
+    Panel1: TPanel;
+    MMenu: TMainMenu;
+    Pginainicial1: TMenuItem;
+    Editar1: TMenuItem;
+    Produtos1: TMenuItem;
+    Funcionrios1: TMenuItem;
+    Financeiro1: TMenuItem;
+    Configuraes1: TMenuItem;
+    Cadastrar1: TMenuItem;
+    Visualizar1: TMenuItem;
+    N1: TMenuItem;
+    Excluir1: TMenuItem;
+    Editar2: TMenuItem;
+    Ficha1: TMenuItem;
+    Visualizar2: TMenuItem;
+    Cadastrar2: TMenuItem;
+    Financeiro2: TMenuItem;
+    Financeiro3: TMenuItem;
+    Editar3: TMenuItem;
+    Excluir2: TMenuItem;
+    Avanar1: TMenuItem;
+    Voltar1: TMenuItem;
+    Editar4: TMenuItem;
+    Editar5: TMenuItem;
+    Fechar2: TMenuItem;
+    Cadastros1: TMenuItem;
+    Preos1: TMenuItem;
+    abelas1: TMenuItem;
+    Relatrips1: TMenuItem;
+    Label1: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmAcessado: TFrmAcessado;
+
+implementation
+
+{$R *.dfm}
+
+end.

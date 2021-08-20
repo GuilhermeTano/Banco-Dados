@@ -1,0 +1,91 @@
+unit uFrmPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Imaging.jpeg, uFrmAcessado, uFrmCadastrar;
+
+type
+  TFrmPrincipal = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    EdtUsuario: TEdit;
+    EdtSenha: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    BtCadastrar: TLabel;
+    BtEsqueceuSenha: TLabel;
+    BTEntrar: TPanel;
+    Label3: TLabel;
+    Image1: TImage;
+    procedure BTEntrarClick(Sender: TObject);
+    procedure BtCadastrarClick(Sender: TObject);
+    procedure EdtUsuarioEnter(Sender: TObject);
+    procedure EdtSenhaEnter(Sender: TObject);
+    procedure EdtUsuarioExit(Sender: TObject);
+    procedure EdtSenhaExit(Sender: TObject);
+
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPrincipal: TFrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmPrincipal.BtCadastrarClick(Sender: TObject);
+begin
+  FrmPrincipal.hide;
+  FrmCadastrar.ShowModal;
+  FrmPrincipal.Show;
+end;
+
+procedure TFrmPrincipal.BTEntrarClick(Sender: TObject);
+begin
+  if (FrmCadastrar.EditUsuario.Text = EdtUsuario.Text) and (FrmCadastrar.EditCriarSenha.Text = EdtSenha.Text) then
+      begin
+        MessageDlg ('Acesso liberado!', mtConfirmation, [mbOK], 0);
+        FrmPrincipal.hide;
+        FrmAcessado.ShowModal;
+        FrmPrincipal.Show;
+      end
+      else
+  if (EdtUsuario.Text = '') or (EdtSenha.Text = '') then
+      begin
+        MessageDlg ('Campo de usuário ou senha não está preenchidos!', mtInformation, [mbOK], 0);
+      end
+  else
+  MessageDlg ('Usuário ou senha inválidos', mtInformation, [mbOK], 0);
+
+end;
+
+procedure TFrmPrincipal.EdtSenhaEnter(Sender: TObject);
+begin
+  EdtSenha.Color := $000ADD8E6;
+end;
+
+procedure TFrmPrincipal.EdtSenhaExit(Sender: TObject);
+begin
+  EdtSenha.Color := clWindow;
+end;
+
+procedure TFrmPrincipal.EdtUsuarioEnter(Sender: TObject);
+begin
+  EdtUsuario.Color := $000ADD8E6;
+end;
+
+
+procedure TFrmPrincipal.EdtUsuarioExit(Sender: TObject);
+begin
+  EdtUsuario.Color := clWindow;
+end;
+
+end.

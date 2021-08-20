@@ -1,0 +1,132 @@
+object FrmAcessado: TFrmAcessado
+  Left = 0
+  Top = 0
+  Caption = 'Sistema de Controle de Dados RX 2.0.7'
+  ClientHeight = 426
+  ClientWidth = 646
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MMenu
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 646
+    Height = 426
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 216
+    ExplicitTop = 184
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+  end
+  object MMenu: TMainMenu
+    Left = 584
+    Top = 16
+    object Pginainicial1: TMenuItem
+      Caption = 'P'#225'gina inicial'
+      object Avanar1: TMenuItem
+        Caption = 'Avan'#231'ar'
+      end
+      object Voltar1: TMenuItem
+        Caption = 'Voltar'
+      end
+      object Editar4: TMenuItem
+        Caption = 'Editar'
+      end
+      object Editar5: TMenuItem
+        Caption = '-'
+      end
+      object Fechar2: TMenuItem
+        Caption = 'Fechar'
+      end
+    end
+    object Editar1: TMenuItem
+      Caption = 'Editar'
+      object Cadastros1: TMenuItem
+        Caption = 'Cadastros'
+      end
+      object Preos1: TMenuItem
+        Caption = 'Pre'#231'os'
+      end
+      object abelas1: TMenuItem
+        Caption = 'Tabelas'
+      end
+      object Relatrips1: TMenuItem
+        Caption = 'Relat'#243'rios'
+      end
+      object N5: TMenuItem
+        Caption = '-'
+      end
+      object Fechar3: TMenuItem
+        Caption = 'Fechar'
+      end
+    end
+    object Produtos1: TMenuItem
+      Caption = 'Produtos'
+      object Cadastrar1: TMenuItem
+        Caption = 'Cadastrar'
+      end
+      object Visualizar1: TMenuItem
+        Caption = 'Visualizar'
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Excluir1: TMenuItem
+        Caption = 'Excluir'
+      end
+      object Editar2: TMenuItem
+        Caption = 'Editar'
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object Fechar1: TMenuItem
+        Caption = 'Fechar'
+      end
+    end
+    object Funcionrios1: TMenuItem
+      Caption = 'Funcion'#225'rios'
+      object Ficha1: TMenuItem
+        Caption = 'Ficha'
+      end
+      object Visualizar2: TMenuItem
+        Caption = 'Visualizar'
+      end
+      object Cadastrar2: TMenuItem
+        Caption = 'Cadastrar'
+      end
+      object Financeiro2: TMenuItem
+        Caption = 'Financeiro'
+      end
+      object Financeiro3: TMenuItem
+        Caption = '-'
+      end
+      object Editar3: TMenuItem
+        Caption = 'Editar'
+      end
+      object Excluir2: TMenuItem
+        Caption = 'Excluir'
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object N4: TMenuItem
+        Caption = 'Fechar'
+      end
+    end
+    object Financeiro1: TMenuItem
+      Caption = 'Financeiro'
+    end
+    object Configuraes1: TMenuItem
+      Caption = 'Configura'#231#245'es'
+    end
+  end
+end
